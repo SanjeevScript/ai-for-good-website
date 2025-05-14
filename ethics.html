@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Ethics (Sanjeev Bharathi)</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Titan+One&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pastelRed: '#F28B82',
+                        coffeeYellow: '#FBC97F',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        titan: ['Titan One', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="font-sans bg-coffeeYellow font-medium">
+
+    <nav class="bg-pastelRed px-6 py-4 flex justify-between items-center shadow-md">
+        <a href="index.html" class="text-coffeeYellow text-xl font-titan hover:opacity-90 transition-opacity">
+            AI for Good (Sanjeev Bharathi)
+        </a>
+        <div class="flex gap-4">
+            <a href="what-is-ai.html" class="text-coffeeYellow px-3 py-2 rounded transition transform hover:scale-105 hover:bg-coffeeYellow hover:text-pastelRed">What is AI</a>
+            <a href="impact.html" class="text-coffeeYellow px-3 py-2 rounded transition transform hover:scale-105 hover:bg-coffeeYellow hover:text-pastelRed">Impact</a>
+            <a href="ethics.html" class="text-coffeeYellow px-3 py-2 rounded transition transform hover:scale-105 hover:bg-coffeeYellow hover:text-pastelRed">Ethics</a>
+            <a href="get-involved.html" class="text-coffeeYellow px-3 py-2 rounded transition transform hover:scale-105 hover:bg-coffeeYellow hover:text-pastelRed">Get Involved</a>
+        </div>
+    </nav>
+
+    <section class="bg-coffeeYellow text-pastelRed py-12 px-6 text-center">
+        <h1 class="text-4xl font-semibold mb-4 font-titan">The Ethics of Artificial Intelligence</h1>
+        <p class="text-lg">Exploring the crucial ethical considerations surrounding the development and deployment of AI.</p>
+    </section>
+
+    <section class="py-12 px-6">
+        <div class="mb-8">
+            <h2 class="text-3xl font-semibold mb-4 font-titan text-pastelRed">Bias and Fairness in AI</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <p class="text-lg text-pastelRed mb-4">AI systems can inadvertently perpetuate and even amplify existing societal biases present in the data they are trained on. This can lead to unfair or discriminatory outcomes in areas like hiring, loan applications, and even criminal justice.</p>
+                    <p class="text-lg text-pastelRed mb-4">It's crucial to develop techniques for identifying and mitigating bias in AI algorithms and datasets to ensure fairness and equity for all.</p>
+                </div>
+                <div class="flex justify-center">
+                    <img src="assets/images/ai_bias_example.jpg" alt="AI Bias Example" class="rounded-xl shadow-md max-w-full h-auto">
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-3xl font-semibold mb-4 font-titan text-pastelRed">Transparency and Explainability</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="md:order-2">
+                    <p class="text-lg text-pastelRed mb-4">As AI systems become more complex, understanding how they arrive at their decisions can be challenging. This lack of transparency, often referred to as the "black box" problem, raises ethical concerns, especially in high-stakes applications.</p>
+                    <p class="text-lg text-pastelRed mb-4">Developing explainable AI (XAI) techniques is essential to build trust, ensure accountability, and allow for human oversight of AI-driven processes.</p>
+                </div>
+                <div class="flex justify-center md:order-1">
+                    <img src="assets/images/ai_transparency_concept.jpg" alt="AI Transparency Concept" class="rounded-xl shadow-md max-w-full h-auto">
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-3xl font-semibold mb-4 font-titan text-pastelRed">Privacy and Data Security</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <p class="text-lg text-pastelRed mb-4">AI systems often rely on vast amounts of data, including personal information. Ensuring the privacy and security of this data is a fundamental ethical imperative. Robust data protection measures and clear guidelines for data collection and usage are necessary.</p>
+                    <p class="text-lg text-pastelRed mb-4">Considerations around data anonymization, consent, and the potential for misuse are critical in the ethical development of AI.</p>
+                </div>
+                <div class="flex justify-center">
+                    <img src="assets/images/ai_privacy_security.jpg" alt="AI Privacy and Security" class="rounded-xl shadow-md max-w-full h-auto">
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-3xl font-semibold mb-4 font-titan text-pastelRed">Autonomy and Responsibility</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="md:order-2">
+                    <p class="text-lg text-pastelRed mb-4">As AI systems gain more autonomy, questions arise about responsibility for their actions. Who is accountable when an autonomous vehicle causes an accident or an AI-powered medical diagnosis is incorrect?</p>
+                    <p class="text-lg text-pastelRed mb-4">Establishing clear lines of responsibility and developing frameworks for governing autonomous AI are essential for navigating the ethical challenges of increasingly intelligent machines.</p>
+                </div>
+                <div class="flex justify-center md:order-1">
+                    <img src="assets/images/ai_autonomy_responsibility.jpg" alt="AI Autonomy and Responsibility" class="rounded-xl shadow-md max-w-full h-auto">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<footer class="bg-pastelRed py-5 text-center text-coffeeYellow">
+    <div class="flex justify-center items-center mb-3">
+        <img src="assets/images/path_to_your_image.jpg" alt="Sanjeev Bharathi" class="w-20 h-20 rounded-full object-cover mr-3">
+        <div class="text-left">
+            <p class="text-lg font-bold font-titan">Sanjeev Bharathi</p>
+            <p class="text-sm">Class: CP3, Section: B, House: Aristotle</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
